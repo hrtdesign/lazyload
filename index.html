@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighweight Lazyload</title>
+    <link rel="stylesheet" href="./assets/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="site-title">Lighweight Lazyload</div>
+        <a class="get-now">Get Now</a>
+    </header>
+    <section class="site-section section-hero">
+        <h1>Lighweight Image Lazyload Script</h1>
+        <p>A simple Lighweight script that lazy load your website images.</p>
+        <p>IT will help to improve your website performance and decrease HTTP Requests during the First-Page Load</p>
+    </section>
+    <section class="site-section">
+        <h2>Installation</h2>
+        <ol>
+            <li>Add minified version of lazyload.js at the End of your HTML</li>
+            <li>Images: Insert a placeholder to the <strong>src</strong> of your images</li>
+            <li>Images: Put the real src to the <strong>data-src</strong> attribute</li>
+            <li>Background Images: Put the background URL to the <strong>data-bg</strong> attribute</li>
+        </ol>
+    </section>
+    <h2 class="site-section lazy-img-section-heading">Example Images:</h2>
+    <div class="site-section lazy-img-section">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?6" class="lazyload" alt="Example 1">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?7" class="lazyload" alt="Example 2">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?8" class="lazyload" alt="Example 3">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?9" class="lazyload" alt="Example 1">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?10" class="lazyload" alt="Example 2">
+        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?11" class="lazyload" alt="Example 3">
+    </div>
+    <h2 class="lazy-bg-section-heading site-section">Example Backgrounds Images:</h2>
+    <div class="lazy-bg-section site-section">
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?12"></div>
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?13"></div>
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?8"></div>
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?9"></div>
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?10"></div>
+        <div class="lazyload-bg" data-bg="https://picsum.photos/500/500?11"></div>
+    </div>
+    <footer>
+        <p><strong>ANY QUERIES?</strong> Please mail us at <a href="mailto:hrtdesign@outlook.com">hrtdesign@outlook.com</a></p>
+    </footer>
+    <script src="./assets/script.min.js"></script>
+</body>
+</html>
