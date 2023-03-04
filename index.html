@@ -20,20 +20,29 @@
     <section class="site-section">
         <h2>Installation</h2>
         <ol>
-            <li>Add minified version of lazyload.js at the End of your HTML</li>
+            <li>Add lazyload.min.js at the End of your HTML</li>
             <li>Images: Insert a placeholder to the <strong>src</strong> of your images</li>
-            <li>Images: Put the real src to the <strong>data-src</strong> attribute</li>
-            <li>Background Images: Put the background URL to the <strong>data-bg</strong> attribute</li>
+            <li>
+                Images: Put the real src to the <strong>data-src</strong> attribute and add class <strong>lazyload</strong>
+                <code>
+                    &lt;img src="https://example/placeholder.png" data-src="https://example/main-image.png" class="lazyload"&gt;
+                </code>
+            </li>
+            <li>Background Images: Put the background URL to the <strong>data-bg</strong> attribute and add class <strong>lazyload-bg</strong>
+                <code>
+                    &lt;div data-src="https://example/background-image.png" class="lazyload-bg"&gt;
+                </code>
+            </li>
         </ol>
     </section>
     <h2 class="site-section lazy-img-section-heading">Example Images:</h2>
     <div class="site-section lazy-img-section">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?6" class="lazyload" alt="Example 1">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?7" class="lazyload" alt="Example 2">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?8" class="lazyload" alt="Example 3">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?9" class="lazyload" alt="Example 1">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?10" class="lazyload" alt="Example 2">
-        <img src="./assets/placeholder.png" data-src="https://picsum.photos/500/500?11" class="lazyload" alt="Example 3">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?6" class="lazyload" alt="Example 1">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?7" class="lazyload" alt="Example 2">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?8" class="lazyload" alt="Example 3">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?9" class="lazyload" alt="Example 1">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?10" class="lazyload" alt="Example 2">
+        <img src="./assets/img/placeholder.png" data-src="https://picsum.photos/500/500?11" class="lazyload" alt="Example 3">
     </div>
     <h2 class="lazy-bg-section-heading site-section">Example Backgrounds Images:</h2>
     <div class="lazy-bg-section site-section">
